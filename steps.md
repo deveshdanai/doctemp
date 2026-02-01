@@ -103,3 +103,29 @@ git commit -m "Updated heading style"
 ## 6. Push Friend Branch
 
 git push origin feature-update-css
+
+
+# Daily Rule
+
+Before starting any work:
+
+git checkout dev
+git pull origin dev
+
+Then create a new feature branch for your task.
+
+
+
+
+
+how to delete the branch?
+Step 1: Switch to Another Branch First
+git checkout dev 
+
+Step 2: Now Delete the Branch
+git branch -d first-html
+
+if error (error: the branch 'first-html' is not fully merged) comes then
+
+git pull origin dev
+git branch -d first-html
