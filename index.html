@@ -8,147 +8,120 @@
 <body>
 
   <!-- Top Navigation -->
-  <nav>
-    <a href="#hero">Home</a>
-    <a href="#about-us">About</a>
-    <a href="#features">Courses</a>
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="#">Home</a>
+    </div>
+    <div class="nav-right">
+      <a href="#">About</a>
+      <a href="#">Courses</a>
+      <button class="menu-toggle">☰</button>
+    </div>
   </nav>
 
-  <!-- Hero / Intro Section -->
-  <header id="hero">
-    <h1>Computer Science and Engineering Syllabus</h1>
-    <p>Your guide to mastering computer science.</p>
-    <a href="#features" class="btn">Explore Courses</a>
-  </header>
+  <!-- Main Documentation Layout -->
+  <main class="grid-layout">
 
-  <!-- Main Content Layout -->
-  <main>
-
-    <!-- LEFT PANEL : Sidebar Navigation -->
-    <aside id="sidebar">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
       <nav>
         <h3>Year 1</h3>
         <ul>
-          <li><a href="#semester-1">Semester 1</a></li>
-          <li><a href="#semester-2">Semester 2</a></li>
+          <li><a href="#">Semester 1</a></li>
+          <li><a href="#">Semester 2</a></li>
         </ul>
 
         <h3>Year 2</h3>
         <ul>
-          <li><a href="#semester-3">Semester 3</a></li>
-          <li><a href="#semester-4">Semester 4</a></li>
+          <li><a href="#">Semester 3</a></li>
+          <li><a href="#">Semester 4</a></li>
         </ul>
 
         <h3>Core Subjects</h3>
         <ul>
-          <li><a href="#ds">Data Structures</a></li>
-          <li><a href="#os">Operating Systems</a></li>
-          <li><a href="#dbms">DBMS</a></li>
-          <li><a href="#cn">Computer Networks</a></li>
+          <li><a href="#">Data Structures</a></li>
+          <li><a href="#">Operating Systems</a></li>
+          <li><a href="#">DBMS</a></li>
+          <li><a href="#">Computer Networks</a></li>
         </ul>
 
         <h3>Electives</h3>
         <ul>
-          <li><a href="#ai">Artificial Intelligence</a></li>
-          <li><a href="#ml">Machine Learning</a></li>
-          <li><a href="#cloud">Cloud Computing</a></li>
+          <li><a href="#">AI</a></li>
+          <li><a href="#">ML</a></li>
+          <li><a href="#">Cloud Computing</a></li>
         </ul>
       </nav>
     </aside>
 
-    <!-- CENTER PANEL : Main Content -->
-    <article id="content">
+    <!-- CENTER CONTENT -->
+    <article class="content">
 
-      <!-- Features / Courses -->
-      <section id="features">
+      <!-- HERO (PART OF CONTENT COLUMN) -->
+      <header class="hero">
+        <h1>Computer Science and Engineering Syllabus</h1>
+        <p>Your guide to mastering computer science.</p>
+        <a href="#" class="btn">Explore Courses</a>
+      </header>
+
+      <section class="features">
         <h2>How to Complete the Syllabus?</h2>
 
-        <article id="overview" class="overview">
+        <article class="content-block">
           <h3>Set Clear Goals</h3>
-          <p>Define what you want to achieve with your syllabus and set specific, measurable goals.</p>
+          <p>Define what you want to achieve and set measurable goals.</p>
         </article>
 
-        <article id="study-schedule" class="about-us">
+        <article class="content-block">
           <h3>Create a Study Schedule</h3>
-          <p>Plan your study time effectively to cover all topics in the syllabus.</p>
+          <p>Plan your study time effectively to cover all topics.</p>
         </article>
 
-        <article id="utilize-resources" class="feature">
+        <article class="content-block">
           <h3>Utilize Resources</h3>
-          <p>Make use of textbooks, online courses, and study groups to enhance your understanding.</p>
+          <p>Use textbooks, online courses, and study groups.</p>
         </article>
       </section>
 
-      <!-- Getting Started Section -->
-      <section id="getting-started">
+      <section class="getting-started">
         <h2>Let's Get Started</h2>
-        <p>Embark on your journey to mastering computer science with our comprehensive syllabus. Start today and unlock your potential!</p>
-        <a href="#features" class="btn">Get Started</a>
+        <p>Start your journey to mastering computer science today.</p>
+        <a href="#" class="btn">Get Started</a>
       </section>
 
-      <!-- About Us Section -->
-      <section id="about-us">
+      <section class="about">
         <h2>About This Documentation</h2>
         <p>
-          This website is created as a structured reference for the
-          B.Tech Computer Science and Engineering syllabus. The goal is to
-          present academic content in a clear, organized, and easy-to-navigate
-          documentation format.
+          This documentation presents the B.Tech CSE syllabus in a clean,
+          structured, and developer-friendly format inspired by modern
+          documentation websites.
         </p>
 
-        <section id="purpose">
-          <h3>Purpose</h3>
-          <p>
-            The purpose of this project is to help students understand
-            core computer science subjects, semester-wise topics, and
-            learning outcomes using a documentation-style layout inspired
-            by modern technical resources.
-          </p>
-        </section>
-
-        <section id="who-can-use">
-          <h3>Who Can Use This</h3>
-          <ul>
-            <li>B.Tech CSE students</li>
-            <li>Beginners learning computer science fundamentals</li>
-            <li>Students preparing for exams and interviews</li>
-            <li>Anyone looking for structured academic references</li>
-          </ul>
-        </section>
-
-        <section id="how-it-is-built">
-          <h3>How This Site Is Built</h3>
-          <p>
-            This site is built using clean, semantic HTML to focus on
-            structure and accessibility first. Styling and interactivity
-            can be added later using CSS and JavaScript without changing
-            the core document structure.
-          </p>
-        </section>
+        <h3>Who Can Use This</h3>
+        <ul>
+          <li>CSE students</li>
+          <li>Beginners</li>
+          <li>Exam aspirants</li>
+        </ul>
       </section>
 
     </article>
 
-    <!-- RIGHT PANEL : On This Page -->
-    <aside id="on-this-page">
+    <!-- RIGHT PANEL -->
+    <aside class="on-this-page">
       <nav>
         <h4>On This Page</h4>
         <ul>
-          <li><a href="#overview">Set Clear Goals</a></li>
-          <li><a href="#study-schedule">Create a Study Schedule</a></li>
-          <li><a href="#utilize-resources">Utilize Resources</a></li>
-          <li><a href="#getting-started">Let's Get Started</a></li>
-          <li><a href="#about-us">About This Documentation</a></li>
+          <li><a href="#">Set Clear Goals</a></li>
+          <li><a href="#">Study Schedule</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Getting Started</a></li>
+          <li><a href="#">About</a></li>
         </ul>
       </nav>
     </aside>
-
+  
   </main>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <p>&copy; 2026 CSE Syllabus. All rights reserved.</p>
-  </footer>
 
 </body>
 </html>
