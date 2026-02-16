@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  {% include "partials/top-nav.html" %}
+
+  <main class="grid-layout">
+
+    {% include "partials/sidebar.html" %}
+
+    <article class="content">
+      {{ content | safe }}
+    </article>
+
+    {% include "partials/on-this-page.html" %}
+
+  </main>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>
